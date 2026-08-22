@@ -19,10 +19,13 @@ A documentação técnica está organizada nos seguintes arquivos:
 
 -**[Documento de Domínio (DDD)](docs/01-dominio.md)**: Linguagem ubíqua, entidades,
 objetos de valor, agregados e regras de negócio.
+
 -**[Casos de Uso](docs/02-casos-uso.md)**: Principais interações dos usuários
 com o sistema.
+
 -**[Arquitetura Proposta](docs/03-arquitetura.md)**: Estratégias de testes, cenários
 críticos e uso de mocks.
+
 -**[Diagramas](docs/diagramas/)**:Representações visuais do domínio e fluxo de status.
 
 ## Integrantes do Grupo
