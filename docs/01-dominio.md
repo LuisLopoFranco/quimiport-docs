@@ -27,4 +27,10 @@ movimentação portuária.
 
 ---
 
+## 1.4. Objetos de Valor (Value Objects)
+- **ClassificacaoRisco**: Enum com valores `INFLAMAVEL`, `CORROSIVO`, `TOXICO`, `RADIOATIVO`, `OUTROS`. Não possui identidade própria.
+- **Quantidade**: Valor numérido positivo (ex: `1500` litros). A regra é que deve ser sempre > 0.
+- **StatusCarga** Enum com valores `REGISTRADA`, `EM_INSPECAO`, `LIBERADA`, `BLOQUEADA`, `CANCELADA`.
+
+---
 
