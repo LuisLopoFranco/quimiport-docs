@@ -34,3 +34,29 @@ movimentação portuária.
 
 ---
 
+## 1.5. Agregados (Aggregates)
+**Agregado Raiz: Carga Química**
+
+**Justificativa**: A `Carga Química` é o centro das operações. Todas as regras mais críticas (documentação, inspeção, liberação, bloqueio) giram em torno dela. Escolhi ela como agregado para proteger a consistência dos dados durante as transições de status.
+
+**Regras protegidas por este agregado:**
+- Não permite registrar sem Produto associado.
+- Não permite registrar com Produto inativo.
+- Não permite Liberar sem que todos os Documentos estejam válidos (data de validade em dia).
+- Controla a transição de status (ex: uma carga `CANCELADA` nunca pode ir para `LIBERADA`).
+
+---
+
+## 1.6. Principais Regras de Negócio (Business Rules)
+1. Uma carga química não pode ser registrada sem produto químico associado.
+2. Uma carga química não pode ser registrada com produto químico inativo.
+3. Uma carga química não pode ser registrada sem classificação de risco.
+4. Uma carga química não pode ser liberada sem documentação obrigatória.
+5. Uma carga bloqueada não pode entrar em movimentação.
+6. Uma carga cancelada não pode ser liberada.
+7. Uma carga em inspeção não pode ser finalizada sem antes ser liberada.
+8. Um produto químico não pode ser cadastrado sem nome.
+9. Um produto químico não pode ser cadastrado sem classe de risco.
+10. Um produto químico inativo não pode ser usado em novas cargas.
+11. A quantidade da carga deve ser maior que zero.
+12. Toda carga deve possuir um responsável técnico informado.
