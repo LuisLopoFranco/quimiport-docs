@@ -20,4 +20,4 @@ movimentação portuária.
 ## 1.3. Entidades
 | Nome da Entidade | Responsabilidade | Principais Atributos | Regras Relacionadas | Relacionamentos |
 | :--- | :--- | :--- | :--- | :--- |
-| **Produto Químico** | Armazenar dados do produto químico cadastrado. | `id`, `nome`, `claseRisco`, `ativo` |
+| **Produto Químico** | Armazenar dados do produto químico cadastrado. | `id`, `nome`, `claseRisco`, `ativo` | Não pode ser cadastrado sem nome e sem classe de risco. Inativo não pode ser vinculado a novas cargas. | Uma carga possui 1 Produto. |
