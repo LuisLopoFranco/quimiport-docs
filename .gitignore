@@ -1,0 +1,11 @@
+# Ignorar arquivos de sistema
+.Ds_Store
+Thumbs.db
+
+# Ignorar arquivos de IDE
+.vscode/
+.idea/
+
+# Ignorar logs e temporários
+*.log
+*.tmp
