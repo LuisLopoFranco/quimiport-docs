@@ -21,3 +21,5 @@ movimentação portuária.
 | Nome da Entidade | Responsabilidade | Principais Atributos | Regras Relacionadas | Relacionamentos |
 | :--- | :--- | :--- | :--- | :--- |
 | **Produto Químico** | Armazenar dados do produto químico cadastrado. | `id`, `nome`, `claseRisco`, `ativo` | Não pode ser cadastrado sem nome e sem classe de risco. Inativo não pode ser vinculado a novas cargas. | Uma carga possui 1 Produto. |
+| **Carga Química** (Agregado Raiz) | Gerenciar o ciclo de vida da carga, controlando status e regras de segurança. | `id`, `quantidade`, `status`, `dataRegistro` | Quantidade deve > 0. Só pode ser liberada se documentação estiver ok. | Possui 1 produto, 1 Responsável, e vários Documentos. |
+| **Responsável Técnico** | Responsável pela análise e liberação da carga. | 
