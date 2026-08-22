@@ -20,3 +20,4 @@ movimentação portuária.
 ## 1.3. Entidades
 | Nome da Entidade | Responsabilidade | Principais Atributos | Regras Relacionadas | Relacionamentos |
 | :--- | :--- | :--- | :--- | :--- |
+| **Produto Químico** | Armazenar dados do produto químico cadastrado. | `id`, `nome`,
